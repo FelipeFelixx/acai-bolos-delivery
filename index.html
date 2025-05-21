@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Delivery Doces & Açaí</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <img src="img/logo.png" alt="Logo" class="logo" />
+    <h1>Delivery Doces & Açaí</h1>
+  </header>
+
+  <section class="produtos">
+    <h2>Monte seu Pedido</h2>
+
+    <div class="produto">
+      <img src="img/acai.jpg" alt="Açaí" />
+      <h3>Açaí</h3>
+      <select id="acai">
+        <option value="0">Selecione</option>
+        <option value="15">300ml - R$15</option>
+        <option value="20">500ml - R$20</option>
+      </select>
+    </div>
+
+    <div class="produto">
+      <img src="img/doce.jpg" alt="Doce" />
+      <h3>Doce</h3>
+      <select id="doce">
+        <option value="0">Selecione</option>
+        <option value="5">Brigadeiro - R$5</option>
+        <option value="6">Beijinho - R$6</option>
+      </select>
+    </div>
+
+    <div class="produto">
+      <img src="img/trufa.jpg" alt="Trufa" />
+      <h3>Trufa</h3>
+      <select id="trufa">
+        <option value="0">Selecione</option>
+        <option value="4">Morango - R$4</option>
+        <option value="4">Maracujá - R$4</option>
+      </select>
+    </div>
+  </section>
+
+  <section class="infos">
+    <h2>Informações para Entrega</h2>
+    <input type="text" id="endereco" placeholder="Endereço completo" required />
+    <input type="number" id="troco" placeholder="Troco para quanto?" />
+  </section>
+
+  <section class="resumo">
+    <h2>Resumo do Pedido</h2>
+    <p id="resumo-pedido">Nenhum item selecionado.</p>
+    <p id="total">Total: R$ 0</p>
+    <button onclick="enviarPedido()">Enviar Pedido via WhatsApp</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
